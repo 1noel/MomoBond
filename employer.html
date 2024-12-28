@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- icon logo -->
+     <link rel="icon" href="Images/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script>
+       tailwind.config = {
+       theme: {
+        extend: {
+            colors: {
+                momobond: '#125B50',
+                nearyellow: '#F8B400',
+                nearyellow2: '#FAF5E4',
+                customp: '#686868',
+               formcontainer: '#DDF0ED',  
+               timesicon: '#FF6363',
+               eyeicon:'#51A8F4',  
+            },
+            fontFamily: {
+                'roboto': ['Roboto', 'sans-serif'],
+                'inter': ['Inter', 'sans-serif'],
+                'montserrat': ['Montserrat', 'sans-serif'],
+                'zen' : ['Zen Kaku Gothic Antique', 'sans-serif'],
+            }
+        }
+    }
+   }
+ </script>
+
+ <style>
+        .font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.font-zen {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+ </style>
+
+ </head>
+
+ <body>
+
+    <!-- navigation -->
+    <div class="bg-black  h-full">
+        <nav class="bg-black bg-opacity-30 p-4 shadow-md">
+            <div class="container mx-auto flex justify-between items-center">
+                <!-- Logo on the left -->
+                <div class="flex items-center">
+                    <img src="Images/logo.png" alt="Logo" class="h-10 hover:scale-105 transition-transform">
+                </div>
+              
+                <!-- Navigation links in the center -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="./" class="text-white hover:text-nearyellow transition-colors duration-300 font-montserrat font-medium">Home</a>
+                    <a href="#" class="text-white hover:text-nearyellow transition-colors duration-300 font-montserrat font-medium">Services</a>
+                    <a href="#" class="text-white hover:text-nearyellow transition-colors duration-300 font-montserrat font-medium">About</a>
+                    <a href="#" class="text-white hover:text-nearyellow transition-colors duration-300 font-montserrat font-medium">Contact Us</a>
+                    <a href="#" class="text-white hover:text-nearyellow transition-colors duration-300 font-montserrat font-medium">FAQs</a>
+                </div>
+
+                <!-- button on the right -->
+                <div class="hidden md:flex space-x-4">
+                    <a href="login.html" class="border-2 font-montserrat border-momobond text-white font-semibold py-2 px-6 rounded-md shadow-lg hover:shadow-xl">
+                        <button>Login</button>
+                    </a>
+                    <a href="signup.html" class="bg-white font-montserrat text-nearyellow font-semibold py-2 px-6 rounded-md  shadow-lg hover:shadow-xl">
+                       <button>Register</button> 
+                    </a>
+                </div>
+  
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-momobond hover:text-nearyellow transition-colors duration-300">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        </div>
+
+
+        <!-- content here  -->
+
+        <section class="container mx-auto ">
+
+            <div class="my-10 md:mx-0 mx-5">
+                <div class="flex justify-between items-center md:flex-nowrap flex-wrap">
+                    <div class="flex justify-center items-center  md:space-x-5 md:flex-nowrap flex-wrap ">
+                        <div class="bg-gray-200 font-montserrat text-sm font-bold text-gray-600 px-5 py-2 items-center">
+                            <i class="fa-solid fa-gauge-high"></i>
+                            <span>Dashboard</span>
+                        </div>
+
+                        <div class="bg-formcontainer font-montserrat text-sm font-bold text-momobond px-5 py-2 items-center">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>My Contracts</span>
+                        </div>
+
+                        <div class="bg-gray-200 font-montserrat text-sm font-bold text-gray-600 px-5 py-2 items-center">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span>Statistics</span>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-end items-center space-x-4 md:mt-0 mt-4">
+                        <div class="border w-[42%] md:h-20 h-24 flex justify-center text-momobond rounded-lg  items-center space-x-2 border-momobond py-2 px-3">
+                            <i class="fa-solid text-xl bg-formcontainer py-1.5 px-3 rounded-full  fa-file-lines"></i>
+                            <div class="text-momobond font-montserrat">
+                                <p class="font-bold text-sm">6</p>
+                                <span>Ongoing Contracts</span>
+                            </div>
+                        </div>
+
+                        <div class="border w-[42%] md:h-20 h-24 flex justify-center text-timesicon rounded-lg  items-center space-x-2 border-timesicon py-2 px-3">
+                            <i class="fa-solid text-xl bg-red-100 py-1.5 px-3 rounded-full  fa-file-lines"></i>
+                            <div class="font-montserrat">
+                                <p class="font-bold text-sm">2</p>
+                                <span>Canceled Contract This Month</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- create button -->
+             <div class="flex justify-end items-center">
+             <button class="bg-momobond text-center font-montserrat space-x-3 items-center px-5 py-1.5 rounded-md text-white"> 
+                <i class="fa fa-plus"></i> create contract
+             </button>
+            </div>
+
+
+            <!-- division contain table and it content -->
+            <div class="white rounded-xl my-8 shadow-lg p-5">
+                <div class="my-8 flex justify-between items-center md:flex-nowarp flex-wrap md:space-y-0 space-y-5">
+                    <h1 class="font-bold text-base font-montserrat mx-2">My Contracts</h1>
+
+                    <div class="flex justify-between space-x-10 items-center ">  
+                        <!-- search -->
+                         
+                            <div class="flex space-x-2 justify-center items-center bg-gray-300 px-2 py-1 rounded-lg">
+                                <p class="text-lg font-bold font-montserrat text-momobond px-2"><i class="fa-solid fa-magnifying-glass"></i></p>
+                                <input type="text" class=" px-3 rounded-md py-2 bg-transparent focus:outline-none" placeholder="Search......">
+                             </div>
+                      
+
+                        <!-- filter icon -->
+                        <div>
+                            <p><i class="fa text-lg fa-filter text-momobond bg-gray-300 px-4 py-2.5 rounded-md"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" overflow-x-auto">
+                <table class="table-auto w-full ">
+                    <thead>
+                        <tr class="border-b font-montserrat text-sm font-medium border-customp text-momobond">
+                            <td class="text-left p-3 ">Contract ID <i class="fa-solid text-gray-400 fa-sort text-xs"></i>
+                            </td>
+                            <td class="text-left p-3">Company <i class="fa-solid text-gray-400 fa-sort text-xs  "></i> </td>
+                            <td class="text-left p-3">Contract Type <i class="fa-solid text-gray-400 fa-sort text-xs    "></i> </td>
+                            <td class="text-left p-3">Salary <i class="fa-solid text-gray-400 fa-sort text-xs   "></i> </td>
+                            <td class="text-left p-3">Time Span <i class="fa-solid text-gray-400 fa-sort text-xs    "></i> </td>
+                            <td class="text-left p-3">Starting Date <i class="fa-solid text-gray-400 fa-sort text-xs    "></i> </td>
+                            <td class="text-left p-3">End Date <i class="fa-solid text-gray-400 fa-sort text-xs "></i> </td>
+                            <td class="text-left p-3">Status <i class="fa-solid text-gray-400 fa-sort text-xs   "></i> </td>
+                            <td class="text-left p-3">Action <i class="fa-solid text-gray-400 fa-sort text-xs   "></i> </td>
+                        </tr>
+                    </thead>
+                    <!-- table border -->
+                    <tbody>
+                        <tr class="text-sm font-montserrat">
+                            <td class="p-3" >#735678775545</td>
+                            <td class="p-3" >Banguka Ltd</td>
+                            <td class="p-3" >Full Time</td>
+                            <td class="p-3" >RWF 250,000</td>
+                            <td class="p-3" >1 Month</td>
+                            <td class="p-3" >01 June 2022</td>
+                            <td class="p-3" >30 June 2022</td>
+                            <td class="p-3" >Ongoing</td>
+                            <td class="space-x-2">
+                                <span><i class="fa-regular fa-eye text-eyeicon"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark text-timesicon"></i></span>
+                                <span><i class="fa fa-unlock text-momobond"></i></span>
+                            </td>
+                        </tr>
+                        <tr class="text-sm font-montserrat">
+                            <td class="p-3" >#735678775545</td>
+                            <td class="p-3" >Ishema Hub Ltd</td>
+                            <td class="p-3" >Partime </td>
+                            <td class="p-3" >RWF 150,000</td>
+                            <td class="p-3" >1 Month</td>
+                            <td class="p-3" >01 June 2022</td>
+                            <td class="p-3" >30 June 2022</td>
+                            <td class="p-3" >Complete</td>
+
+                            <td class="space-x-2">
+                                <span><i class="fa-regular fa-eye text-eyeicon"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark text-timesicon"></i></span>
+                                <span><i class="fa-solid fa-unlock text-momobond"></i></span>
+                            </td>
+                        </tr>
+                        <tr class="text-sm font-montserrat">
+                            <td class="p-3" >#735678775545</td>
+                            <td class="p-3" >Shure Bus Ltd</td>
+                            <td class="p-3" >Partime</td>
+                            <td class="p-3" >RWF 250,000</td>
+                            <td class="p-3" >1 Month</td>
+                            <td class="p-3" >01 June 2022</td>
+                            <td class="p-3" >30 June 2022</td>
+                            <td class="p-3 text-nearyellow" >Pending</td>
+
+                            <td class="space-x-2">
+                                <span><i class="fa-regular fa-eye text-eyeicon"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark text-timesicon"></i></span>
+                                <span><i class="fa-solid fa-unlock text-momobond"></i></span>
+                            </td>
+                        </tr>
+                        <tr class="text-sm font-montserrat">
+                            <td class="p-3" >#735678775545</td>
+                            <td class="p-3" >Nova Lays Ltd</td>
+                            <td class="p-3" >Full Time</td>
+                            <td class="p-3" >RWF 250,000</td>
+                            <td class="p-3" >1 Month</td>
+                            <td class="p-3" >01 June 2022</td>
+                            <td class="p-3" >30 June 2022</td>
+                            <td class="p-3" >Complete</td>
+
+                            <td class="space-x-2">
+                                <span><i class="fa-regular fa-eye text-eyeicon"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark text-timesicon"></i></span>
+                                <span><i class="fa-solid fa-unlock text-momobond"></i></span>
+                            </td>
+                        </tr>
+                        <tr class="text-sm font-montserrat">
+                            <td class="p-3" >#735678775545</td>
+                            <td class="p-3" >Ishema Hub Ltd</td>
+                            <td class="p-3" >One day Contract</td>
+                            <td class="p-3" >RWF 150,000</td>
+                            <td class="p-3" >1 Month</td>
+                            <td class="p-3" >01 June 2022</td>
+                            <td class="p-3" >30 June 2022</td>
+                            <td class="p-3 text-nearyellow" >Pending</td>
+
+                            <td class="space-x-2">
+                                <span><i class="fa-regular fa-eye text-eyeicon"></i></span>
+                                <span><i class="fa-regular fa-circle-xmark text-timesicon"></i></span>
+                                <span><i class="fa-solid fa-unlock text-momobond"></i></span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- pagination -->
+            <div class=" mt-10 mb-5">
+                <div class="flex justify-center items-center gap-4 font-montserrat">
+                   
+                    <button class="bg-gray-200 px-3.5 py-1.5  text-gray-500 rounded-full">
+                        <i class="fa-solid fa-chevron-left text-sm"></i>
+                    </button>
+                    
+                    <div class="flex gap-2 bg-gray-200 px-2 rounded-full ">
+                        <button class="px-3 py-1.5 font-montserrat text-sm rounded-full hover:bg-momobond hover:px-4 hover: py-2 hover:text-white">1</button>
+                        <button class="px-3 py-1.5 font-montserrat text-sm rounded-full hover:bg-momobond hover:px-4 hover: py-2 hover:text-white">2</button>
+                        <button class="px-3 py-1.5 font-montserrat text-sm rounded-full hover:bg-momobond hover:px-4 hover: py-2 hover:text-white">3</button>
+                        <button class="px-4 py-2 font-montserrat text-sm rounded-full text-white bg-momobond">4</button>
+                        <button class="px-3 py-1.5 font-montserrat text-sm rounded-full hover:bg-momobond hover:px-4 hover: py-2 hover:text-white">5</button>
+                        <button class="px-3 py-1.5 font-montserrat text-sm rounded-full hover:bg-momobond hover:px-4 hover: py-2 hover:text-white">6</button>
+                        <button class="px-3 py-1.5 font-montserrat text-sm rounded-full hover:bg-momobond hover:px-4 hover: py-2 hover:text-white">7</button>
+                    </div>
+            
+                    <button class="bg-gray-200 px-3.5 py-1.5 text-momobond rounded-full">
+                        <i class="fa-solid fa-chevron-right text-sm"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+        </section>
+
+</body>
+</html>
